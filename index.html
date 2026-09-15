@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Pro X— La gravedad queda cancelada</title>
+
+  <!-- Локальные стили -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-light" data-bs-theme="dark">
+
+<!-- Encabezado fijo con desenfoque (Glassmorphism) -->
+<nav id="navbar" class="navbar navbar-expand-md fixed-top blur-header">
+  <div class="container">
+    <a class="navbar-brand fw-bold tracking-wide text-white" href="#">AURA</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link text-white-50 hover-text-white" href="#design">Diseño</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50 hover-text-white" href="#tech">Tecnología</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50 hover-text-white" href="#gallery">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50 hover-text-white" href="#specs">Especificaciones</a></li>
+      </ul>
+    </div>
+    <a href="#buy" class="btn btn-light rounded-pill px-4 py-1 fw-semibold d-none d-md-block btn-buy-nav text-black">Comprar</a>
+  </div>
+</nav>
+
+<!-- Modal (Video Popup - Без рамки, с блюром и плеером Kinescope) -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0 position-relative">
+      <!-- Крестик закрытия -->
+      <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 mt-2 me-2 z-3" data-bs-dismiss="modal" aria-label="Close" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></button>
+
+      <!-- Прямоугольник с видео (Kinescope) -->
+      <div class="modal-body p-0 rounded-4 overflow-hidden shadow-lg bg-black" style="aspect-ratio: 16/9; width: 100%;">
+        <!-- Замените 123456789 на ID вашего видео в Kinescope -->
+        <iframe src="https://kinescope.io/7jjGaiuw1drB3tDC5ehHU4?autoplay=1" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" frameborder="0" allowfullscreen style="width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- Pantalla 1: Hero -->
+  <section class="screen hero vh-100 d-flex align-items-center justify-content-center text-center position-relative overflow-hidden" id="hero">
+    <!-- Ваша картинка для Хиро -->
+    <div class="hero-bg position-absolute w-100 h-100" style="background: url('snowboard-snowy-slope-ski-resort.jpg') center/cover no-repeat;"></div>
+    <div class="hero-overlay position-absolute w-100 h-100"></div>
+
+    <div class="container position-relative z-2">
+      <p class="h6 text-white-50 fw-semibold mb-3 reveal delay-1 text-uppercase tracking-wide">Aura Pro X</p>
+      <h1 class="display-1 fw-bold mb-4 tracking-tight reveal delay-2 text-white text-shadow">La gravedad queda cancelada.</h1>
+      <p class="fs-4 text-light mx-auto mb-5 reveal delay-3 text-shadow" style="max-width: 800px; line-height: 1.6;">
+        Control absoluto. Velocidad extrema. Diseñada para aquellos que reescriben las reglas de la montaña. Cada centímetro de la Aura Pro ha sido calibrado en túneles de viento para ofrecer la máxima transferencia de energía.
+      </p>
+
+      <div class="d-flex justify-content-center gap-4 reveal delay-4 flex-wrap">
+        <a href="#buy" class="btn btn-light rounded-pill px-5 py-3 fs-5 fw-semibold border-0 btn-apple text-black">Comprar</a>
+        <!-- Кнопка видео без стрелочки -->
+        <button type="button" class="btn btn-outline-light rounded-pill px-5 py-3 fs-5 fw-semibold btn-apple" data-bs-toggle="modal" data-bs-target="#videoModal">
+          Ver película
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pantalla 2: Diseño (Product Showcase) -->
+  <section class="screen py-5 my-5" id="design">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-start reveal">
+          <h2 class="display-4 fw-bold mb-4 tracking-tight text-white">Aerodinámica<br>en estado puro.</h2>
+          <p class="fs-5 text-secondary mb-4" style="line-height: 1.7;">
+            Hemos eliminado todo lo innecesario. El perfil ultradelgado y la superficie de carbono mate reducen la fricción y la resistencia al viento a niveles nunca antes vistos. Este diseño no solo es estético, es funcional: te permite cortar la nieve y el hielo con una precisión quirúrgica, manteniendo la estabilidad incluso en las condiciones más extremas de la alta montaña.
+          </p>
+          <ul class="list-unstyled text-secondary fs-5 space-y-3">
+            <li><span class="text-white fw-bold d-inline-block me-3">—</span> Bordes reforzados con titanio y Kevlar</li>
+            <li><span class="text-white fw-bold d-inline-block me-3">—</span> Capa superior negra mate anti-rayado</li>
+            <li><span class="text-white fw-bold d-inline-block me-3">—</span> Reducción de peso estructural del 22%</li>
+          </ul>
+        </div>
+
+        <!-- SVG ПРОДУКТА: Сноуборд -->
+        <div class="col-lg-6 reveal delay-1 text-center">
+          <div class="rounded-4 overflow-hidden border border-secondary border-opacity-25 bg-black shadow-lg" style="aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" class="w-100 h-100">
+              <rect width="100%" height="100%" fill="#0a0a0a"/>
+              <rect x="350" y="110" width="160" height="790" rx="80" fill="#000" filter="blur(15px)"/>
+              <rect x="330" y="100" width="140" height="780" rx="70" fill="url(#boardGrad)" stroke="#333" stroke-width="3"/>
+              <rect x="310" y="280" width="180" height="40" rx="10" fill="#1a1a1a" stroke="#444"/>
+              <rect x="310" y="660" width="180" height="40" rx="10" fill="#1a1a1a" stroke="#444"/>
+              <text x="400" y="500" fill="#444" font-size="45" font-weight="900" font-family="sans-serif" text-anchor="middle" transform="rotate(-90 400 500)" letter-spacing="12">AURA PRO</text>
+              <defs>
+                <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2a2a2a"/>
+                  <stop offset="50%" stop-color="#111111"/>
+                  <stop offset="100%" stop-color="#050505"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pantalla 3: Tecnología -->
+  <section class="screen py-5 my-5" id="tech">
+    <div class="container reveal">
+      <h2 class="display-5 fw-bold text-center mb-5 tracking-tight text-white">Ingeniería interior.<br><span class="text-secondary">Sin compromisos.</span></h2>
+      <div class="row g-4">
+        <div class="col-md-6 reveal delay-1">
+          <div class="bento-item p-5 rounded-4 h-100 d-flex flex-column justify-content-end">
+            <h3 class="fw-bold text-white mb-3">Núcleo AeroCore™</h3>
+            <p class="text-secondary mb-0 fs-5">Forjado con una aleación de aluminio espacial y madera de paulownia de origen sostenible. Máxima reactividad y un pop explosivo con el mínimo peso posible.</p>
+          </div>
+        </div>
+        <div class="col-md-6 reveal delay-2">
+          <div class="bento-item p-5 rounded-4 h-100 d-flex flex-column justify-content-end">
+            <h3 class="fw-bold text-white mb-3">Suela Nano-Grafeno</h3>
+            <p class="text-secondary mb-0 fs-5">La base más rápida jamás creada. La matriz de grafeno incrustada mantiene una velocidad extrema y constante, sin importar la temperatura de la nieve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pantalla 4: Galería con Textos -->
+  <section class="screen py-5 my-5" id="gallery">
+    <div class="container reveal">
+      <h2 class="display-5 fw-bold text-center mb-5 tracking-tight text-white">Domina cada terreno.</h2>
+      <div class="row g-4">
+        <div class="col-md-6 d-flex flex-column gap-4">
+
+          <!-- Imagen 1 -->
+          <div class="gallery-img-wrapper rounded-4 overflow-hidden border border-secondary border-opacity-25 position-relative" style="aspect-ratio: 4/3; background:#080808;">
+            <svg viewBox="0 0 800 600" class="w-100 h-100 object-fit-cover">
+              <path d="M-100 600 L250 250 L450 450 L650 150 L950 600 Z" fill="#111" stroke="#333" stroke-width="3"/>
+              <path d="M300 600 L550 350 L750 600 Z" fill="#1a1a1a" stroke="#444" stroke-width="2"/>
+              <circle cx="200" cy="180" r="50" fill="#222"/>
+            </svg>
+            <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+              <h4 class="fw-bold text-white mb-1 shadow-sm">Altitud extrema</h4>
+              <p class="text-white-50 mb-0 fs-6">Conquista las cimas más imponentes.</p>
+            </div>
+          </div>
+
+          <!-- Imagen 2 -->
+          <div class="gallery-img-wrapper rounded-4 overflow-hidden border border-secondary border-opacity-25 position-relative" style="aspect-ratio: 16/9; background:#050505;">
+            <svg viewBox="0 0 800 450" class="w-100 h-100 object-fit-cover">
+              <line x1="-100" y1="400" x2="900" y2="100" stroke="#333" stroke-width="6"/>
+              <line x1="-100" y1="450" x2="900" y2="150" stroke="#1a1a1a" stroke-width="12"/>
+              <line x1="-100" y1="350" x2="900" y2="50" stroke="#444" stroke-width="2"/>
+              <rect x="350" y="200" width="150" height="20" rx="10" fill="#fff" transform="rotate(-15 425 210)"/>
+            </svg>
+            <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+              <h4 class="fw-bold text-white mb-1 shadow-sm">Velocidad sin límites</h4>
+              <p class="text-white-50 mb-0 fs-6">Estabilidad total incluso a 100 km/h.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex flex-column gap-4">
+
+          <!-- Imagen 3 -->
+          <div class="gallery-img-wrapper rounded-4 overflow-hidden border border-secondary border-opacity-25 position-relative" style="aspect-ratio: 16/9; background:#030303;">
+            <svg viewBox="0 0 800 450" class="w-100 h-100 object-fit-cover">
+              <path d="M-50 225 Q 200 50, 400 225 T 850 225" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+              <path d="M-50 250 Q 200 75, 400 250 T 850 250" fill="none" stroke="#333" stroke-width="3"/>
+              <path d="M-50 275 Q 200 100, 400 275 T 850 275" fill="none" stroke="#444" stroke-width="3"/>
+            </svg>
+            <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+              <h4 class="fw-bold text-white mb-1 shadow-sm">Precisión milimétrica</h4>
+              <p class="text-white-50 mb-0 fs-6">Curvas perfectas gracias al camber adaptativo.</p>
+            </div>
+          </div>
+
+          <!-- Imagen 4 -->
+          <div class="gallery-img-wrapper rounded-4 overflow-hidden border border-secondary border-opacity-25 position-relative" style="aspect-ratio: 4/3; background:#0a0a0a;">
+            <svg viewBox="0 0 800 600" class="w-100 h-100 object-fit-cover">
+              <path d="M250 -100 Q 550 300, 250 700" fill="none" stroke="#333" stroke-width="12"/>
+              <path d="M300 -100 Q 600 300, 300 700" fill="none" stroke="#222" stroke-width="12"/>
+            </svg>
+            <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+              <h4 class="fw-bold text-white mb-1 shadow-sm">Tu propio camino</h4>
+              <p class="text-white-50 mb-0 fs-6">Deja tu huella donde nadie más ha estado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pantalla 5: Especificaciones (Ancho completo) -->
+  <section class="screen py-5 my-5" id="specs">
+    <div class="container reveal text-start">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <h2 class="display-4 fw-bold mb-5 tracking-tight text-white">Especificaciones.</h2>
+
+          <div class="spec-list">
+            <div class="row py-4 border-top border-secondary border-opacity-50">
+              <div class="col-md-4"><h4 class="fw-bold text-white mb-3 mb-md-0">Perfil y Forma</h4></div>
+              <div class="col-md-8"><p class="text-secondary fs-5 mb-0">Camber direccional adaptativo. Nariz ligeramente más ancha para flotar en nieve polvo profunda, combinada con una cola rígida diseñada para proporcionar un agarre agresivo.</p></div>
+            </div>
+
+            <div class="row py-4 border-top border-secondary border-opacity-50">
+              <div class="col-md-4"><h4 class="fw-bold text-white mb-3 mb-md-0">Flexibilidad</h4></div>
+              <div class="col-md-8"><p class="text-secondary fs-5 mb-0">Clasificación 8.5/10 (Rígida). Estructura concebida para riders de nivel avanzado a experto que exigen una respuesta instantánea y máxima transmisión de potencia.</p></div>
+            </div>
+
+            <div class="row py-4 border-top border-secondary border-opacity-50">
+              <div class="col-md-4"><h4 class="fw-bold text-white mb-3 mb-md-0">Amortiguación</h4></div>
+              <div class="col-md-8"><p class="text-secondary fs-5 mb-0">Sistema de elastómeros integrados bajo las zonas de fijación (AuraDamp™) que absorben las vibraciones de alta frecuencia, reduciendo la fatiga muscular.</p></div>
+            </div>
+
+            <div class="row py-4 border-top border-bottom border-secondary border-opacity-50">
+              <div class="col-md-4"><h4 class="fw-bold text-white mb-3 mb-md-0">Compatibilidad</h4></div>
+              <div class="col-md-8"><p class="text-secondary fs-5 mb-0">Plataforma de montaje universal rediseñada. Permite ajustes milimétricos e infinitos de la postura, compatible con todas las marcas principales de fijaciones.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pantalla 6: CTA (Comprar) con la segunda imagen -->
+  <section class="screen py-5 mt-5 position-relative overflow-hidden" id="buy">
+    <!-- Ваша вторая картинка на фоне (обесцвеченная и затемненная) -->
+    <div class="position-absolute w-100 h-100 top-0 start-0" style="background: url('woman-snowboard-suit-sportswoman-mountain-with-snowboard-hands-horizon-concept-sports.jpg') center/cover no-repeat; filter: grayscale(100%);"></div>
+    <div class="hero-overlay position-absolute w-100 h-100 top-0 start-0" style="background: rgba(0,0,0,0.85);"></div>
+
+    <div class="container text-center reveal py-5 position-relative z-2">
+      <h2 class="display-3 fw-bold mb-4 tracking-tight text-white text-shadow">Es hora de volar.</h2>
+      <p class="fs-4 text-light opacity-75 mb-5 text-shadow">Pide tu Aura Pro hoy. Unidades limitadas.<br>Envío asegurado en 24 horas.</p>
+      <div class="d-flex flex-column align-items-center gap-3">
+        <button class="btn btn-light rounded-pill px-5 py-4 fs-4 fw-bold border-0 btn-apple text-black shadow-lg">Añadir al carrito — 999 €</button>
+        <p class="text-white-50 mt-3 fs-6">Incluye funda rígida de viaje y kit de mantenimiento premium.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="py-5 text-secondary fs-6 text-center text-md-start bg-black border-top border-secondary border-opacity-25">
+  <div class="container">
+    <div class="row g-4 justify-content-between mb-5 mt-2">
+      <div class="col-md-5">
+        <h5 class="text-white fw-bold tracking-wide mb-3 fs-4">AURA</h5>
+        <p class="pe-md-5">La revolución del snowboarding. Diseñamos equipos sin compromisos para aquellos que exigen lo máximo de sí mismos y de la montaña.</p>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white fw-bold mb-3">Productos</h6>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block mb-2">Aura Pro</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block mb-2">Aura Park</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block mb-2">Fijaciones</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block">Accesorios</a>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white fw-bold mb-3">Asistencia</h6>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block mb-2">Soporte Técnico</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block mb-2">Garantía de por vida</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block mb-2">Envíos y devoluciones</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white d-block">Contacto</a>
+      </div>
+    </div>
+    <hr class="border-secondary mb-4 opacity-25">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-3 mb-md-0">© 2027 Aura Sports Inc. Todos los derechos reservados.</p>
+      <div class="d-flex gap-4">
+        <a href="#" class="text-secondary text-decoration-none hover-text-white">Política de privacidad</a>
+        <a href="#" class="text-secondary text-decoration-none hover-text-white">Aviso Legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Локальные скрипты -->
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
