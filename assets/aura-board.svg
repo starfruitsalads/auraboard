@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 700" fill="none">
+  <defs>
+    <linearGradient
+      id="board"
+      x1="25"
+      y1="0"
+      x2="185"
+      y2="700"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#5a6068" />
+      <stop offset=".18" stop-color="#222831" />
+      <stop offset=".54" stop-color="#10151c" />
+      <stop offset=".85" stop-color="#28313b" />
+      <stop offset="1" stop-color="#485462" />
+    </linearGradient>
+    <linearGradient id="edge">
+      <stop stop-color="#93a2ae" />
+      <stop offset=".23" stop-color="#333e48" />
+      <stop offset=".5" stop-color="#afc3d3" />
+      <stop offset=".75" stop-color="#25313e" />
+      <stop offset="1" stop-color="#7894a8" />
+    </linearGradient>
+    <pattern
+      id="carbon"
+      width="6"
+      height="6"
+      patternUnits="userSpaceOnUse"
+      patternTransform="rotate(35)"
+    >
+      <rect width="3" height="6" fill="#aec3d5" opacity=".055" />
+      <path d="M0 3h6" stroke="#000" stroke-opacity=".35" />
+    </pattern>
+    <clipPath id="clip">
+      <path
+        d="M100 8C39 8 21 49 24 117l14 179c3 33 2 72-1 108L24 574c-5 70 15 118 76 118s81-48 76-118l-13-170c-3-36-4-75-1-108l14-179C179 49 161 8 100 8Z"
+      />
+    </clipPath>
+  </defs>
+  <path
+    d="M100 8C39 8 21 49 24 117l14 179c3 33 2 72-1 108L24 574c-5 70 15 118 76 118s81-48 76-118l-13-170c-3-36-4-75-1-108l14-179C179 49 161 8 100 8Z"
+    fill="url(#board)"
+    stroke="url(#edge)"
+    stroke-width="3"
+  />
+  <g clip-path="url(#clip)">
+    <rect width="200" height="700" fill="url(#carbon)" />
+    <path
+      d="m-60 80 270 107M-60 89l270 107M-60 550l270 107"
+      stroke="#a7d8ed"
+      stroke-width=".7"
+      opacity=".35"
+    />
+    <path d="m-60 571 270 107" stroke="#a7d8ed" stroke-width="14" />
+    <path d="M33 95c0-51 18-70 67-75" stroke="#abc7db" opacity=".12" />
+    <text
+      x="99"
+      y="110"
+      text-anchor="middle"
+      font-family="Arial,sans-serif"
+      font-size="14"
+      letter-spacing="4"
+      fill="#c8e0ee"
+    >
+      AURA
+    </text>
+    <path d="m85 74 15-25 15 25" stroke="#c8e0ee" stroke-width="2" />
+    <text
+      x="114"
+      y="399"
+      font-family="Arial,sans-serif"
+      font-size="32"
+      letter-spacing="7"
+      fill="#b7cfde"
+      opacity=".55"
+      transform="rotate(-90 114 399)"
+    >
+      AURA
+    </text>
+    <g fill="#99b7c9" opacity=".6">
+      <circle cx="83" cy="219" r="2" />
+      <circle cx="117" cy="219" r="2" />
+      <circle cx="83" cy="233" r="2" />
+      <circle cx="117" cy="233" r="2" />
+      <circle cx="83" cy="247" r="2" />
+      <circle cx="117" cy="247" r="2" />
+      <circle cx="83" cy="261" r="2" />
+      <circle cx="117" cy="261" r="2" />
+      <circle cx="83" cy="441" r="2" />
+      <circle cx="117" cy="441" r="2" />
+      <circle cx="83" cy="455" r="2" />
+      <circle cx="117" cy="455" r="2" />
+      <circle cx="83" cy="469" r="2" />
+      <circle cx="117" cy="469" r="2" />
+      <circle cx="83" cy="483" r="2" />
+      <circle cx="117" cy="483" r="2" />
+    </g>
+    <path
+      d="M72 210h56v60H72zM72 432h56v60H72z"
+      stroke="#a8bfce"
+      stroke-opacity=".1"
+    />
+    <text
+      x="99"
+      y="551"
+      text-anchor="middle"
+      font-family="Arial,sans-serif"
+      font-size="9"
+      letter-spacing="2"
+      fill="#cbdfef"
+    >
+      PRO X
+    </text>
+    <text
+      x="99"
+      y="568"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="5"
+      letter-spacing="1"
+      fill="#8dabbf"
+    >
+      MOUNTAIN SERIES / 2027
+    </text>
+    <text
+      x="99"
+      y="653"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="6"
+      letter-spacing="2"
+      fill="#111b25"
+    >
+      AURA EQUIPMENT
+    </text>
+  </g>
+</svg>
