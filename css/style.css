@@ -369,48 +369,56 @@ summary:focus-visible {
   color: #a1a6ae;
   margin: 0;
 }
-/* One calm landscape in place of a collage. */
+/* Help riders decide whether the board suits their experience. */
 .terrain-section {
-  padding: 0;
-}
-.terrain-panorama {
-  height: 700px;
-  position: relative;
-  isolation: isolate;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+  padding: 100px 0;
+  background: #e8f1f7;
   color: #1a2d3a;
+}
+.terrain-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 72px;
+}
+.terrain-photo {
+  height: 470px;
+  margin: 0;
+  border-radius: 24px;
+  overflow: hidden;
   background: #dbe6ef;
 }
-.terrain-panorama > img {
-  position: absolute;
-  inset: 0;
+.terrain-photo img {
+  display: block;
   width: 100%;
   height: 100%;
-  z-index: -2;
   object-fit: cover;
-  object-position: 50% 55%;
-}
-.terrain-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(90deg, #f1f7fc40, transparent 70%);
-}
-.terrain-copy {
-  padding-bottom: 65px;
+  object-position: 66% center;
 }
 .terrain-copy h2 {
-  font-size: clamp(45px, 4.9vw, 72px);
+  font-size: clamp(36px, 3.7vw, 54px);
   font-weight: 600;
 }
 .terrain-copy p {
   color: #344c5d;
-  font-size: 19px;
-  max-width: 350px;
+  font-size: 18px;
   line-height: 1.6;
   margin: 26px 0 0;
+}
+.terrain-copy .rider-detail {
+  color: #627989;
+  font-size: 16px;
+  margin-top: 18px;
+}
+.terrain-copy .text-link {
+  color: #2a668a;
+  margin-top: 26px;
+}
+.terrain-copy .text-link:hover {
+  color: #174866;
+}
+.terrain-copy .text-link:focus-visible {
+  outline-color: #2a668a;
 }
 /* The technical information stays useful, with less framing. */
 .specs-section {
@@ -1174,8 +1182,11 @@ body:not(.aura-home) .navbar-brand {
   .tech-copy p {
     font-size: 14px;
   }
-  .terrain-panorama {
-    height: 600px;
+  .terrain-layout {
+    gap: 40px;
+  }
+  .terrain-photo {
+    height: 430px;
   }
   .specs-layout,
   .faq-section {
@@ -1343,27 +1354,27 @@ body:not(.aura-home) .navbar-brand {
     font-size: 16px;
     line-height: 1.7;
   }
-  .terrain-panorama {
-    height: 640px;
-    align-items: flex-start;
+  .terrain-section {
+    padding: 65px 0;
   }
-  .terrain-panorama > img {
-    object-position: 65% center;
+  .terrain-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
-  .terrain-copy {
-    padding-top: 66px;
-    padding-bottom: 0;
+  .terrain-photo {
+    height: 290px;
+    border-radius: 20px;
   }
   .terrain-copy h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .terrain-copy p {
-    max-width: 280px;
     font-size: 17px;
     margin-top: 22px;
   }
-  .terrain-overlay {
-    background: linear-gradient(180deg, #f1f7fc65, transparent 60%);
+  .terrain-copy .rider-detail {
+    font-size: 15px;
+    margin-top: 16px;
   }
   .specs-layout,
   .faq-section {
